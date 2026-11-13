@@ -299,3 +299,10 @@ TF_VAR_token_map_base64=e30= terraform -chdir=infra destroy \
 Mit OpenTofu funktioniert derselbe Befehl entsprechend mit `tofu` statt `terraform`.
 
 Verwende dabei denselben Projektname und dieselbe Region wie beim Deployment; ergänze bei Bedarf `-var=aws_profile=mein-aws-profil`. Der Dummy-Wert `e30=` entspricht einer leeren JSON-Map und wird nur benötigt, damit Terraform bzw. OpenTofu beim Zerstören die Pflichtvariable einlesen kann. Das Tool fragt vor dem Löschen nach einer Bestätigung.
+
+## Screenshot / Beispielbild
+
+Das Beispielbild für die Upload-Seite liegt im Projekt unter `imgToCloud.png`:
+
+![Upload-Beispiel](imgToCloud.png)
+
