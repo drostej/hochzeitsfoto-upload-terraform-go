@@ -2,6 +2,9 @@
 
 Eine kleine mobile Webseite für Hochzeitsgäste: QR-Code scannen, Fotos oder Videos auswählen und direkt in einen privaten Amazon-S3-Bucket hochladen. Die Gäste benötigen weder ein AWS-Konto noch eine App.
 
+
+![Upload-Beispiel](imgToCloud.png)
+
 Terraform erstellt die komplette Infrastruktur:
 
 - privaten S3-Bucket für Fotos und Videos
