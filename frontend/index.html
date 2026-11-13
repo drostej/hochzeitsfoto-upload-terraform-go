@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="referrer" content="no-referrer">
+    <meta name="theme-color" content="#f8f2ea">
+    <title>Hochzeitsfotos teilen</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card" aria-labelledby="title">
+        <img class="brand-mark" src="GLH_transparent.png" alt="">
+        <p class="eyebrow" id="table-label">Unsere Hochzeit</p>
+        <h1 id="title">Unsere Hochzeit</h1>
+        <p class="intro" id="intro">Schön, dass du mit uns feierst! Teile deine schönsten Fotos und Videos vom heutigen Tag.</p>
+
+        <div id="invalid-token" class="notice notice-error hidden" role="alert">
+          Dieser Link enthält keinen gültigen Upload-Code. Bitte scanne den QR-Code auf deiner Karte erneut.
+        </div>
+
+        <div id="upload-area">
+          <label class="picker" for="file-input">
+            <span class="picker-icon" aria-hidden="true">＋</span>
+            <span>Fotos &amp; Videos auswählen</span>
+            <small>JPG, PNG, HEIC, WebP, MP4 oder MOV · bis 100 MB</small>
+          </label>
+          <input id="file-input" type="file" accept="image/jpeg,image/png,image/webp,image/heic,image/heif,video/mp4,video/quicktime,.jpg,.jpeg,.png,.webp,.heic,.heif,.mp4,.mov" multiple>
+
+          <div id="selection" class="selection hidden" aria-live="polite">
+            <div class="selection-row">
+              <strong id="selection-count"></strong>
+              <button id="clear-button" class="text-button" type="button">Auswahl löschen</button>
+            </div>
+            <ul id="file-list" class="file-list"></ul>
+          </div>
+
+          <div id="status" class="status hidden" aria-live="polite">
+            <div class="progress-track" aria-hidden="true">
+              <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <p id="status-text"></p>
+          </div>
+
+          <div id="error" class="notice notice-error hidden" role="alert"></div>
+          <button id="upload-button" class="primary-button" type="button" disabled>Jetzt hochladen</button>
+        </div>
+
+        <div id="success" class="success hidden" aria-live="polite">
+          <div class="success-icon" aria-hidden="true">✓</div>
+          <h2>Vielen Dank!</h2>
+          <p>Deine Erinnerungen sind sicher angekommen.</p>
+          <button id="more-button" class="secondary-button" type="button">Weitere Fotos hochladen</button>
+        </div>
+
+        <p class="privacy">Die Dateien werden privat gespeichert und sind nur für das Brautpaar zugänglich.</p>
+      </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

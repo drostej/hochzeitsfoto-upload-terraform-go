@@ -1,0 +1,13 @@
+.build/
+output/qr/*.png
+output/links.csv
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/*.tfplan
+infra/*.tfstate
+infra/*.tfstate.*
+config/tables.json
+infra/backend.tf
+.env
+*.pem
+*.key
